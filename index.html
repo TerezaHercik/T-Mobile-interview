@@ -10,11 +10,24 @@
       rel="Shortcut Icon"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body>
+  <body class="dark">
+    <!-- Swapper light/dark mode -->
+
+    <div class="swapper">
+      <h2>Toggle Dark/Light Mode</h2>
+      <p>
+        Click the button to toggle between dark and light mode for this page.
+      </p>
+
+      <button onclick="myFunction()">Toggle dark mode</button>
+    </div>
 
     <div class="content_width">
       <header class="white_square">
@@ -61,7 +74,7 @@
           </div>
         </div>
 
-       <div class="horizontal_line"></div>
+        <div class="horizontal_line"></div>
 
         <div class="grid right">
           <div class="grid_image">
@@ -73,7 +86,7 @@
           <div class="grid_text">
             <h3>Lorem Ipsum Dolor 1</h3>
             <h4>Lorem Ipsum</h4>
-            <p><i>ipsum dolor sit, amet consectetur adipisicing elit.</i> </p>
+            <p><i>ipsum dolor sit, amet consectetur adipisicing elit.</i></p>
           </div>
         </div>
 
@@ -99,7 +112,7 @@
           <h2>Jak na to</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            porro eveniet 
+            porro eveniet
           </p>
           <ul>
             <li>
@@ -113,34 +126,19 @@
             </li>
             <li>Lorem ipsum dolor sit amet consectetur</li>
           </ul>
-      
+
           <div class="button">
             <a href="#">Chci využít dárek</a>
-          </div>    
+          </div>
         </div>
       </main>
     </div>
 
-<!-- <script>
-  
-document.onkeypress = function (e) {
-  e = e || window.event;
-
-  if(e.keyCode === 13) {
-    document.documentElement.classList.toggle('dark_mode');
-
-    
-  
-  }
-}
-
-
-</script> -->
-
-<!-- document.querySelectorAll('.inverted').forEach((result) => {
-  result.classList.toggle('invert');
-    
-  }) -->
-
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark");
+      }
+    </script>
   </body>
 </html>

@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="300" height="169">
-	<style>
-		tspan { white-space:pre }
-		.shp0 { fill: #a8d4f0 } 
-	</style>
-	<path id="Shape 1" class="shp0" d="M96 328L1228 328L1228 343L96 343L96 328Z" />
-	<path id="Shape 2" class="shp0" d="M1201 -120L1301 -120L1301 -20L1201 -20L1201 -120Z" />
-</svg>
