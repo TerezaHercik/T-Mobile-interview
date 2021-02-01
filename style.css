@@ -14,6 +14,24 @@ body {
     margin-bottom: 50px;
 }
 
+.swapper button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+    background-color: #E7097B;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+}
+
+.icon {
+    padding-right: 5px;
+}
+
+
 /* Styly pro dark mode */
 
 body.dark {
@@ -25,6 +43,19 @@ body.dark {
 body.dark .white_square {
     background-color: #3A3A3B;
 }
+
+body.dark li:before {
+    filter: invert(1);
+}
+
+body.dark .swapper button {
+    border: none;
+    color: white;
+}
+
+
+
+/* Konec stylů pro dark mode */
 
 h1, h2 {
     text-transform: uppercase;
@@ -80,20 +111,23 @@ li:before {
     background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(97, 95, 95, 0.3);
+    padding: 20px 20px 0 20px;
 }
 
 .hero {
     text-align: center;
 }
 
-.hero_image {
+.hero_image img {
     height: 200px;
     background-size: cover;
     max-width: 100%;
     height: auto;
-    padding: 20px 30px 0px 30px;
-    margin: 0 auto;
-    border-radius: 40px;
+    padding: 30px 30px 0px 30px;
+}
+
+.hero_image {
+    border-radius: 20px;
 
 }
 
@@ -108,7 +142,7 @@ li:before {
     "grid_image grid_text";
     grid-template-columns: 1fr | 2fr;
     grid-template-rows: auto;
-    margin: 20px 15px 20px 15px;
+    margin: 20px 15px 20px 0;
 }
 
 .grid_image {
@@ -135,7 +169,7 @@ margin: 0 auto;
 }
 
 .paragraph {
-    margin: 0px 30px 10px 30px;
+    margin: 0px 30px 10px 0;
     padding-bottom: 20px;
 
 }
@@ -206,7 +240,8 @@ margin: 0 auto;
     }
 
     .right .grid_text {
-        padding-left: 0;
+        padding-right: 15px;
+        padding-left: 0px;
     }
 
     .horizontal_line {
